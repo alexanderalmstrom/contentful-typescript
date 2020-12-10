@@ -8,6 +8,8 @@ interface Props {
 }
 
 const Posts = ({ posts }: Props) => {
+  if (!posts) return null;
+
   return (
     <div className={styles.root}>
       {posts.map(({ sys, fields }) => {

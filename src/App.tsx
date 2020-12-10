@@ -15,8 +15,6 @@ const App = () => {
     loadPosts();
   }, []);
 
-  if (!posts) return null;
-
   return (
     <div className={styles.root}>
       <Posts posts={posts} />
