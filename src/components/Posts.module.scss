@@ -1,0 +1,10 @@
+.root {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
+  width: 100%;
+}
+
+.post {
+  margin-bottom: 1rem;
+}
