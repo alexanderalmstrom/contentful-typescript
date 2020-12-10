@@ -1,5 +1,18 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background-color: #000;
   color: #fff;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+iframe {
+  max-width: 100%;
 }
