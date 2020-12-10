@@ -1,20 +1,7 @@
-import { Asset, Entry } from "contentful";
+import { Asset, Entry, Sys } from "contentful";
 
 export interface Post extends Entry<PostFields> {
-  sys: {
-    id: string;
-    type: string;
-    createdAt: string;
-    updatedAt: string;
-    locale: string;
-    contentType: {
-      sys: {
-        id: "post";
-        linkType: "ContentType";
-        type: "Link";
-      };
-    };
-  };
+  sys: Sys;
 }
 
 export interface PostFields {
