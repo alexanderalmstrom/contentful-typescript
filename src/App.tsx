@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer } from "react";
 import styles from "./App.module.scss";
-import getPosts from "./lib/getPosts";
+import { getPosts } from "./services/posts";
 import postReducer from "./reducers/postReducer";
 import Posts from "./components/Posts";
 

@@ -1,7 +1,5 @@
 import { EntryCollection } from "contentful";
 import contentfulClient from "./contentfulClient";
 
-const getPosts = async (): Promise<EntryCollection<unknown>> =>
+export const getPosts = async (): Promise<EntryCollection<any>> =>
   contentfulClient.getEntries({ content_type: "post" });
-
-export default getPosts;

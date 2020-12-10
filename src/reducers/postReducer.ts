@@ -1,15 +1,16 @@
+import { ContentfulCollection } from "contentful";
 import { Post } from "../interfaces/Post";
 
-interface States {
+interface State {
   posts: Post[];
 }
 
-interface Actions {
-  type: string;
-  payload: any;
+interface Action {
+  type: "LOAD_POSTS";
+  payload: ContentfulCollection<any>;
 }
 
-const postReducer = (state: States, action: Actions) => {
+const postReducer = (state: State, action: Action) => {
   switch (action.type) {
     case "LOAD_POSTS":
       return {
