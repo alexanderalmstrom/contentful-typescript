@@ -6,7 +6,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "server": "node server/index.js"
+    "server": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql"
   },
   "eslintConfig": {
     "extends": [
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.3.5",
+    "@types/graphql": "^14.5.0",
     "@types/node": "^14.14.10",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -41,6 +42,8 @@
     "typescript": "^4.1.2"
   },
   "devDependencies": {
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.2"
   }
 }
